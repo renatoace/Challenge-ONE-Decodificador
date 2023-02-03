@@ -1,8 +1,7 @@
 body{
 	font-family: 'Inter', sans-serif;
 	position: relative;
-	width: 1440px;
-	height: 1024px;
+	
 	
 	/* Light blue/light-blue-100 */
 	background: #F3F5FC;		
@@ -21,23 +20,34 @@ body{
 	left: 40px;
 	top: 40px;
 }
-.mainTextArea #codificar {
-	/* Digite seu texto */
+.main {
+	width: 40%;
+    margin: 8% 50% 0 20%;
+}
+.mainTextArea {
+	position: absolute;
+	width: 40%;
+	height: 48px;
+	left: 240px;
+	top: 168px;
+}
 
+#codificar {
+	/* Digite seu texto */
+	margin: 5px 0 0 20px;
+	width: 680px;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 150%;
 	display: block;
-	color: #0A3871;
-	position: absolute;
-	width: 680px;
-	height: 48px;
-	left: 240px;
-	top: 168px;
+	color: #0A3871;	
 	border: none;
 	background: #F3F5FC;
+	outline: none;
+    resize: none;
+    overflow: auto;
 
 }
 
@@ -92,11 +102,9 @@ body{
 	top: 885px;
 }
 
-.mainButton input {
+.mainButton button {
 
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	
 	padding: 24px;
 	gap: 8px;
 
@@ -109,20 +117,20 @@ body{
 	border-radius: 24px;
 
 	/* Inside auto layout */
-	flex: none;
+	
 	order: 0;
 	flex-grow: 0;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 19px;
 	text-align: center;
 	color: #0A3871;;
 
 }
 
-.mainButton input:hover{
+.mainButton button:hover{
 	background: #0A3871;
 	color: #FFFFFF;
 	
@@ -144,6 +152,19 @@ body{
 	/* shadow */
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
+}
+
+.resposta {
+    border: none;
+    background: none;
+    font-size: 2em;
+    color: #0A3871;
+    font-family: 'Inter';
+    resize: none;
+	padding-left: 30px;
+	padding-top: 30px;
+    width: 400px;
+    line-height: 108%;
 }
 
 .imagem-nadaAchado{
@@ -178,6 +199,33 @@ body{
 
 .textoCriptografia p{
 	font-size: small;
+}
+
+.btnCopiar:hover, .limparBtn:hover {
+    background: #0A3871;
+    
+    border: 1px solid #FFF;
+   
+    color: #FFF;
+    
+}
+
+.limparBtn, .btnCopiar {
+    background: #D8DFE8;
+    border-radius: 15px;
+    border: 1px solid #0A3871;
+    width: 140px;
+    padding: 15px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 18px;
+    box-shadow: 0px 2px 8px black;
+    cursor: pointer;
+    margin: 12px 0 0 16px;
+}
+
+.btnCopiar{
+	margin-left: 50px;
 }
  
 .desenvolvedor{

@@ -4,12 +4,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Decodificador</title>	
+	<title>Decodificador</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet"  href="reset.css">
 	<link rel="stylesheet"  href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	
+	
 </head>
 <body>
+	
 	<header>
 		
 		<img src="imagem\logo.png" class="logo">
@@ -18,8 +21,8 @@
 	<main>
 		
 		<section class="mainTextArea">
-			<label for="codificar"></label>
-			<textarea name="codificar" cols="70" rows="10"  type="text-area" id="codificar" placeholder="Digite seu texto" autofocus></textarea>
+			
+			<textarea name="codificar" class="codificar" cols="70" rows="10"  type="text-area" id="codificar" placeholder="Digite seu texto" autofocus></textarea>
 		</section>
 		<section class="mainInformation">
 			<img src="imagem/bi_exclamation-circle-fill.jpg" class="informacaoImg">
@@ -28,8 +31,8 @@
 		</section>
 
 		<section class="mainButton">
-			<input type="submit" id="imput" value="Criptografar" class="btnCriptografar" onclick= "criptografar()">
-            <input type="submit" id="imput" value="Descriptografar" class="btnDescriptografar" onclick="descriptografar()">
+			<button type="submit"  class="btnCriptografar" onclick= "criptografar()">Criptografar</button>
+            <button type="submit"  class="btnDescriptografar" onclick="descriptografar()">Descriptografar</button>
 		</section>
 
 		<section class="mainAreaCriptografia">
@@ -41,12 +44,12 @@
 		</section>
 
 	</main>
-
+	
 	<footer>
 		
 		<p class="desenvolvedor">Desenvolvedor: Renato Menezes da Silva d'Amore - 2023</p>
 
 	</footer>
-
+	<script src="script.js"></script>
 </body>
 </html>
