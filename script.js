@@ -10,8 +10,7 @@ const codificar = document.querySelector("#codificar").value.toLowerCase();
 const mensagem = document.querySelector(".mainAreaCriptografia")
 
 function criptografar() {
-    const codificar = document.querySelector("#codificar").value.toLowerCase();
-const mensagem = document.querySelector(".mainAreaCriptografia")
+
     const char = '[a-zA-Z0-9]';
 
     if (!codificar.match(char)){
